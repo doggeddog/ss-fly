@@ -280,7 +280,9 @@ check_dependency() {
                 apt-get -y install python python-dev python-setuptools openssl libssl-dev curl wget unzip gcc automake autoconf make libtool
                 ;;
                 'centos')
-                yum install -y python python-devel python-setuptools openssl openssl-devel curl wget unzip gcc automake autoconf make libtool
+                yum install -y python python-devel python-setuptools openssl openssl-devel curl wget unzip gcc automake autoconf 
+                ln -s /bin/python2 /bin/python
+                make libtool
         esac
 }
 
