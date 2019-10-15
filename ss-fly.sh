@@ -150,7 +150,7 @@ install_ssr() {
                      apt-get -y install wget
                      ;;
                 'centos')
-                     yum install -y wget
+                     yum install -y wget gcc make
                      ;;
         esac
 	wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocksR.sh
